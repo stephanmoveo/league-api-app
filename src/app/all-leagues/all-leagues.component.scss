@@ -1,0 +1,60 @@
+$imageWidth: 200px;
+
+.league-container {
+  color: white;
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: bold;
+  }
+
+  .button-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    div {
+      width: 15%;
+      margin: 5px;
+      button {
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        padding: 5px 2px 5px 2px;
+        background-color: #2d8bff;
+        color: white;
+        font-size: 20px;
+        font-family: second;
+      }
+    }
+
+
+    button:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+
+  .team-warp {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+
+    .team-row {
+      margin: 20px;
+
+      div {
+        margin: 20px 0;
+      }
+
+      img {
+        width: $imageWidth;
+      }
+    }
+  }
+
+}

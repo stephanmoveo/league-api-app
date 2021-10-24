@@ -1,0 +1,14 @@
+<div class="league-container">
+  <div class="button-group">
+    <div *ngFor="let item of leagueNames">
+      <button [routerLink]=item.title (click)="getTeamByName(item.name, item.title)">{{item.text}}</button>
+    </div>
+  </div>
+  <h1>{{teamName}}</h1>
+  <div class="team-warp">
+    <div class="team-row" *ngFor="let item of allteams">
+      <div>{{item.strTeam}}</div>
+      <img src={{item.strTeamLogo}}>
+    </div>
+  </div>
+</div>
